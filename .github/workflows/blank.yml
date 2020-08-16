@@ -13,7 +13,7 @@ jobs:
           status: custom
           custom_payload: |
             {
-              text: 'Issue opened: <${{ github.event.issue.html_url }}|#${{ github.event.issue.number }} ${{ github.event.issue.title }} ${{ github.event.issue }}>'
+              text: 'Issue opened: <${{ github.event.issue.html_url }}|#${{ github.event.issue.number }} ${{ github.event.issue.title }} ${{ github.event.issues }}>'
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} 
